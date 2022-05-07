@@ -1,9 +1,10 @@
 import 'package:dynamic_link_test/firebase_dynamic_link.dart';
-import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 
-void main() {
+Future<void> main() async {
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
